@@ -1,6 +1,6 @@
 # 🎵  Audio Player
 
-This project represents a demo for a mp3 audio player web component. A live **demo** can be accesed [here](https://audio-player-lsk.web.app/).
+This project represents a demo for a mp3 audio player web component. A live **demo** can be accesed [here](https://audio-player-lsk.web.app/). Note: If the demo is opened from mobile, please open it in browser so audio files can be uploaded.
 
 ## 🔥  How can I use it?
 
