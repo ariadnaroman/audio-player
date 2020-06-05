@@ -1,27 +1,21 @@
-# AudioPlayerComponent
+# 🎵  Audio Player
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+This project represents a demo for a mp3 audio player web component. A live **demo** can be accesed [here](https://audio-player-lsk.web.app/).
 
-## Development server
+## 🔥  How can I use it?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A simple insertion of `<app-audio-player></app-audio-player>` into a html page will automatically add the audio player to the page. The player will be sticky to the bottom of the page so that it's easier to access. The player is responsive to all types of screen sizes, from mobile to desktop. It supports the most basic operations: previous, play, pause, next, and volume adjustments. Besides, it allows loading multiple .mp3 files from computer into the playlist and playing them consecutively. Audio files can be removed from the list or appended to it. The entire list can be shown by clicking the list button. The list also shows the current audio file and allows the user to select any song to play. 
 
-## Code scaffolding
+## 🔨 What's it made of?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The player was made only using html, css and typescript in an Angural environment, no third party library was used. The icons of the player are taken from [Material](https://material.io/resources/icons/?style=baseline). 
 
-## Build
+## 🔧 How do I run it?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+After cloning the project, `npm install` should be run in order to install all dependencies from package.json. When the install is over, a `ng serve` command will load the app on `http://localhost:4200/`.
 
-## Running unit tests
+## 💥 What else can be done?
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Future work would add caching of the playlist, design improvements and ordering the audio files by drag and drop. 
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## 🎶 Let the music play!
