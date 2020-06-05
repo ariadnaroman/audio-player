@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "./dist/audio-player-component",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+<div #wrapper class="wrapper">
+  <div #list *ngIf="showList" class="list">
+    <div *ngFor="let file of files; let i = index" [class.selected]="i === currentFileIndex" class="song">
+      <span (click)="setCurrentIndex(i)">{{file.name}}</span><img class="delete_song" src="../../assets/clear-24px.svg" (click)="deleteFile(i)">
+    </div>
+    <span (click)="fileInput.click()" class="add_song">Choose files...</span>
+    <input type="file" #fileInput accept=".mp3" (change)="onFilesSelected($event.target.files)" style="display:none;" multiple/>
+  </div>
+  <div #audioplayer class="audioplayer">
+    <audio #music_player>
+    </audio>
+    <img src="../../assets/list-24px.svg" (click)="toggleShowList()">
+    <img src="../../assets/bx-skip-previous.svg" (click)="skipPrevious()" #skip_prev_button>
+    <img src="../../assets/bx-play.svg" (click)="togglePlay()" #play_button>
+    <img src="../../assets/bx-skip-next.svg" (click)="skipNext()" #skip_next_button>
+    <div class="volume">
+      <img src="../../assets/bxs-volume.svg" (click)="toggleVolume()" #vol_img>
+      <input type="range" #change_vol (change)="changeVolume($event)" step="0.05" min="0" max="1" value="1">
+    </div>
+  </div>
+</div>
